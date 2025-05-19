@@ -1,0 +1,284 @@
+/* HEADER */
+header.header {
+  background-color: #febdc6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+  padding: 0.8rem 1.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #8b2b40;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+/* Menú de navegación */
+nav.menu-principal {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #8b2b40;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #5a1825;
+}
+
+/* Submenú */
+.submenu-items {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #000000;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 3px 8px rgba(139, 43, 64, 0.3);
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 10;
+  padding-top: 0.4rem;
+}
+
+.submenu-items li {
+  padding: 0.4rem 1rem;
+}
+
+.submenu-items li a {
+  color: #8b2b40;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.submenu-items li a:hover {
+  background-color: #fbd6dc;
+  color: #5a1825;
+  border-radius: 4px;
+}
+
+nav ul li:hover > .submenu-items {
+  display: flex;
+}
+
+/* Menú hamburguesa móvil */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #8b2b40;
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffc0cb;
+  padding: 15px 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #d6336c;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.titulo {
+  text-align: center;
+  margin: 30px;
+  color: #d6336c;
+  font-size: 28px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 30px;
+  justify-items: center;
+}
+
+.producto {
+  background-color: #ffe4ec;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  margin: 10px 0 5px;
+  color: #d6336c;
+}
+
+.ver-mas {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #ff4d6d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.ver-mas:hover {
+  background-color: #e6395a;
+}
+
+footer {
+  background-color: #ffc0cb;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}

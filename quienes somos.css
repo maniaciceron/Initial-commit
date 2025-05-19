@@ -1,0 +1,292 @@
+/* Contenedor principal del header */
+header.header {
+  background-color: #febdc6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa logo a la izquierda y menú a la derecha */
+  padding: 0.8rem 1.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo y texto pequeños y alineados a la izquierda */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem; /* más pequeño */
+  color: #8b2b40;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 40px;  /* tamaño pequeño para el logo */
+  height: auto;
+}
+
+/* Navegación alineada a la derecha */
+nav.menu-principal {
+  position: relative;
+}
+
+/* Lista de menú principal */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Items del menú */
+nav ul li {
+  position: relative;
+}
+
+/* Links principales */
+nav ul li a {
+  text-decoration: none;
+  color: #8b2b40;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #5a1825;
+}
+
+/* Submenu */
+.submenu-items {
+  position: absolute;
+  top: 110%; /* separa el submenu del link padre */
+  left: 0;
+  background-color: #febdc6;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 3px 8px rgba(139, 43, 64, 0.3);
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 10;
+  padding-top: 0.4rem;
+}
+
+/* Items dentro del submenu */
+.submenu-items li {
+  padding: 0.4rem 1rem;
+}
+
+.submenu-items li a {
+  color: #8b2b40;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.submenu-items li a:hover {
+  background-color: #fbd6dc;
+  color: #5a1825;
+  border-radius: 4px;
+}
+
+/* Mostrar submenu en hover */
+nav ul li:hover > .submenu-items {
+  display: flex;
+}
+
+/* Estilos para menú hamburguesa móvil (opcional) */
+.menu-toggle {
+  display: none; /* oculto por defecto */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #8b2b40;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======= HEADER ======= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-bottom: 2px solid #ffe0e9;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ======= MENÚ ======= */
+.nav .menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav .menu li a {
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav .menu li a:hover {
+  background-color: #ffccd5;
+}
+
+/* ======= SECCIÓN VISIÓN, MISIÓN Y VALORES ======= */
+.valores-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #fff5f7;
+}
+
+.tarjeta {
+  background-color: #ffe0e9;
+  border-left: 8px solid #ff4d6d;
+  border-radius: 20px;
+  padding: 25px 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+
+.tarjeta h2 {
+  font-size: 28px;
+  color: #d6336c;
+  margin-bottom: 15px;
+}
+
+.tarjeta p, .tarjeta ul {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+}
+
+.tarjeta li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+.valores-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #fff5f7;
+}
+
+.tarjeta {
+  background-color: #ffe0e9;
+  border-left: 8px solid #ff4d6d;
+  border-radius: 20px;
+  padding: 25px 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+
+.tarjeta h2 {
+  font-size: 28px;
+  color: #d6336c;
+  margin-bottom: 15px;
+}
+
+.tarjeta p, .tarjeta ul {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.tarjeta ul {
+  padding-left: 20px;
+}
+
+.tarjeta li {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+

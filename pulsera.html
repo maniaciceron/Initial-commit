@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio - Detallitos de Amor</title>
+  <link rel="stylesheet" href="pulseras.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="Logo.jpeg.jpg" alt="Logo" />
+      <span>Detallitos de Amor</span>
+    </div>
+
+    <nav class="menu-principal" id="menuPrincipal">
+      <span class="menu-toggle" id="menuToggle">&#9776;</span>
+      <ul>
+             <li><a href="index.html">Inicio</a></li>
+        <li><a href="quieres somos.html">Quienes Somos</a></li>
+        <li class="submenu">
+          <a href="producto.html" tabindex="0">Productos</a>
+          <ul class="submenu-items">
+         
+
+            <li><a href="bandeja.html">Bandejas</a></li>
+            <li><a href="pulsera.html">Pulseras</a></li>
+            <li><a href="flores.html">Ramos de flores</a></li>
+            <li><a href="cadena.html">Cadenas Compartidas</a></li>
+            <li><a href="almoadas.html">Almohadas</a></li>
+            <li><a href="decoracion.html">Decoración</a></li>
+
+
+
+          </ul>
+        </li>
+        
+        
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+
+     
+
+
+<div class="carrito-icono">
+    <img src="compra.jpg" alt="Carrito" width="40">
+    <span id="contador-carrito">0</span>
+</div>
+
+
+
+
+
+
+
+    <main>
+        <section class="productos-container">
+            <article class="card-producto" data-nombre="Bandeja Romántica">
+                <img src="pulsera2.jpg" alt="Bandeja Romántica" />
+                <h3>Pulsera Con Fechas</h3>
+                <p>Precio: RD$ 150</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+            <article class="card-producto" data-nombre="Bandeja de Chocolates">
+                <img src="pulsera3.jpg" alt="Bandeja de Chocolates" />
+                <h3>Pulsera Con Llave y Cantado</h3>
+                <p>Precio: RD$ 200</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+            <article class="card-producto" data-nombre="Bandeja con Flores">
+                <img src="pulsera4.jpg" alt="Bandeja con Flores" />
+                <h3>Pulsera Con Numeros</h3>
+                <p>Precio: RD$ 175</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+            <article class="card-producto" data-nombre="Bandeja Desayuno">
+                <img src="pulsera5.jpg" alt="Bandeja Desayuno" />
+                <h3>Pulsera Con Osito y Osita</h3>
+                <p>Precio: RD$ 800</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+            <article class="card-producto" data-nombre="Bandeja Sorpresa">
+                <img src="pulseras6.jpg" alt="Bandeja Sorpresa" />
+                <h3>Pulsera Con Toxico y Toxica</h3>
+                <p>Precio: RD$ 300</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+            <article class="card-producto" data-nombre="Bandeja Cumpleaños">
+                <img src="pulseras7.jpg" alt="Bandeja Cumpleaños" />
+                <h3>Pulsera Con Mia y Mio</h3>
+                <p>Precio: RD$ 250</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+             <article class="card-producto" data-nombre="Bandeja Desayuno">
+                <img src="pulsera8.jpg" alt="Bandeja Desayuno" />
+                <h3>Pulsera Con Gorda y Gordo</h3>
+                <p>Precio: RD$ 400</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+             <article class="card-producto" data-nombre="Bandeja Desayuno">
+                <img src="pulsera9.jpg" alt="Bandeja Desayuno" />
+                <h3>Pulsera Personalizadas </h3>
+                <p>Precio: 500</p>
+                <button class="btn-agregar">Añadir a la bolsa</button>
+            </article>
+        </section>
+    </main>
+
+    <div id="carrito" class="carrito-oculto">
+        <h2>Tu bolsa de compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: RD$ <span id="total">0</span></p>
+        <button id="vaciar-carrito">Vaciar bolsa</button>
+        <button id="cerrar-carrito">Cerrar</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

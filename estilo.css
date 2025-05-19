@@ -1,0 +1,148 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff0f5;
+}
+
+header {
+  background-color: #ffc0cb;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-pequeno {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+/* Menú de navegación y carrito a la derecha */
+.nav-carrito-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.navbar .menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  gap: 5px;
+}
+
+.search-box input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+}
+
+/* Carrito */
+#carrito {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  max-width: 250px;
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff69b4;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+footer {
+  background-color: #ffc0cb;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
